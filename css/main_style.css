@@ -1,8 +1,14 @@
+/*
+Colors from https://brand.txst.edu/visual-identity/colors.html
+#501214 -Texas State Maroon
+#AC9155 - Texas State Dark Gold
+*/
+
 body {
-   background-color: #650000;
-   color: #e75480;
+   background-color: #501214;
+   color: #AC9155;
    text-align: center;
  }
 h1 {
-  color: #e75480;
+  color: #AC9155;
 }
