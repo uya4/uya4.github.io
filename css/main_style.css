@@ -24,6 +24,7 @@ h1 {
   min-height: 100vh;
   border: 2px solid #D7BD8A;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 #header {
