@@ -18,11 +18,11 @@ h1 {
   margin: 0;
 }
 #body-container {
-  background-color: #AC9155;
+  background-color: #D7BD8A;
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
-  border: 2px solid #D7BD8A;
+  border: 2px solid #AC9155;
   border-radius: 25px;
   overflow: hidden;
 }
