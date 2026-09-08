@@ -2,6 +2,7 @@
 Colors from https://brand.txst.edu/visual-identity/colors.html
 #501214 -Texas State Maroon
 #AC9155 - Texas State Dark Gold
+#EA664D - Eat 'Em Up, Peach
 */
 
 body {
@@ -16,11 +17,11 @@ h1 {
   margin: 0;
 }
 #body-container {
-  background-color: #f7f7f7;
+  background-color: ##EA664D;
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
-  border: 2px solid #f7f7f7;
+  border: 2px solid ##EA664D;
 }
 
 #header {
