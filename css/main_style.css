@@ -19,6 +19,7 @@ h1 {
   background-color: #f7f7f7;
   max-width: 1000px;
   margin: auto;
+  min-height: 100vh;
 }
 
 #header {
