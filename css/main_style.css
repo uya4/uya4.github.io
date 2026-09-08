@@ -17,11 +17,11 @@ h1 {
   margin: 0;
 }
 #body-container {
-  background-color: ##EA664D;
+  background-color: #EA664D;
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
-  border: 2px solid ##EA664D;
+  border: 2px solid #EA664D;
 }
 
 #header {
