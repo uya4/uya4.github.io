@@ -20,6 +20,7 @@ h1 {
   max-width: 1000px;
   margin: auto;
   min-height: 100vh;
+  border: 2px solid #f7f7f7;
 }
 
 #header {
