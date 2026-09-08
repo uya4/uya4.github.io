@@ -44,4 +44,5 @@ h1 {
 #research-interests {
   text-align: left;
   font-size: 25px;
+  position: relative;
 }
