@@ -11,9 +11,7 @@
         <div id="body-container">
 
             <div id="header">
-              <div id="header">
                 <script src="javascript/external.js"></script>
-              </div>
             </div>
 
             <div id="profile-picture">
@@ -21,14 +19,15 @@
             </div>
 
             <div id="welcome-text">
-                <p>Welcome to my webpage.<br>
+                <p>
+                    My name is Ceri Prior.<br>
+                    Welcome to my webpage.<br>
                     I am a
                     <a href="https://www.geo.txstate.edu/" target="_blank">GIS undergraduate
                     student</a> at
                     <a href="https://www.txst.edu/" target="_blank">Texas State University</a>.
                 </p>
             </div>
-
             <div id="research-interests">
                 <p>
                     <h3>Research Interests:</h3>
@@ -40,6 +39,19 @@
                 </p>
             </div>
 
-        </div>
-    </body>
-</html>
+            <div id="copyright">
+                <script>
+                    // Creates a new Date object containing the current date and time.
+                    var today = new Date();
+
+                    // Gets the current four-digit year from today's date.
+                    var year = today.getFullYear();
+
+                    // Displays the copyright symbol followed by the current year.
+                    document.writeln("Copyright &copy; " + year);
+                </script>
+            </div>
+
+            </div>
+            </body>
+            </html>
