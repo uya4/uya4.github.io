@@ -17,3 +17,4 @@ function welcome()
 }
 
 document.write(welcome());
+document.write(message);
