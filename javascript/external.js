@@ -6,7 +6,10 @@ var webmaps =
 [
     [
         "Community Crime Map",
-        "https://communitycrimemap.com/?address=%20San%20Antonio%20TX",
+        "https://communitycrimemap.com/?address=%20San%20Antonio%20TX"
+    ],
+
+    [
         "The Community Crime Map visualizes crime incidents in the City of San Antonio " +
         "and provides information such as crime type, date and time, location type, and address. " +
         "I found the map very user friendly and easy to understand. " +
@@ -17,7 +20,10 @@ var webmaps =
 
     [
         "Atlas Obscura",
-        "https://www.atlasobscura.com/articles/all-places-in-the-atlas-on-one-map",
+        "https://www.atlasobscura.com/articles/all-places-in-the-atlas-on-one-map"
+    ],
+
+    [
         "The Atlas Obscura map showcases unusual and surprising places around the world " +
         "for people who want to explore different areas. " +
         "A major strength is the large number and variety of places shown. " +
@@ -49,9 +55,16 @@ function webmap_table()
     {
         document.write("<tr>");
 
-        for (var column=0; column < webmaps[0].length; column++)
+        if (row % 2 == 0)
         {
-            document.write("<td>" + webmaps[row][column] + "</td>");
+            for (var column=0; column < webmaps[row].length; column++)
+            {
+                document.write("<td>" + webmaps[row][column] + "</td>");
+            }
+        }
+        else
+        {
+            document.write("<td colspan=2>" + webmaps[row][0] + "</td>");
         }
 
         document.write("</tr>");
