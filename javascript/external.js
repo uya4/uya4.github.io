@@ -7,13 +7,23 @@ var webmaps =
     [
         "Community Crime Map",
         "https://communitycrimemap.com/?address=%20San%20Antonio%20TX",
-        "PUT YOUR SHORT COMMUNITY CRIME MAP REVIEW HERE."
+        "The Community Crime Map visualizes crime incidents in the City of San Antonio " +
+        "and provides information such as crime type, date and time, location type, and address. " +
+        "I found the map very user friendly and easy to understand. " +
+        "One weakness is that the large number of points creates visual clutter. " +
+        "I would improve the map by using point clustering so nearby crimes are grouped together " +
+        "and separate as the user zooms in."
     ],
 
     [
         "Atlas Obscura",
         "https://www.atlasobscura.com/articles/all-places-in-the-atlas-on-one-map",
-        "PUT YOUR SHORT ATLAS OBSCURA REVIEW HERE."
+        "The Atlas Obscura map showcases unusual and surprising places around the world " +
+        "for people who want to explore different areas. " +
+        "A major strength is the large number and variety of places shown. " +
+        "I found the map less user friendly because the controls are confusing and the map itself is fairly small. " +
+        "I would improve it by making the map larger, making the zoom controls easier to use, " +
+        "and reducing visual clutter in the symbology."
     ]
 ];
 
