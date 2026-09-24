@@ -96,6 +96,23 @@
                           'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
                           {}
                         ).addTo(mymap);
+                        var geocoder = L.Control.geocoder({
+                          defaultMarkGeocode: false,
+                          geocoder: new L.Control.Geocoder.Nominatim()
+                        }).on('markgeocode', function(e) {
+
+                          var bbox = e.geocode.bbox;
+
+                          var poly = L.polygon([
+                            bbox.getSouthEast(),
+                            bbox.getNorthEast(),
+                            bbox.getNorthWest(),
+                            bbox.getSouthWest()
+                          ]);
+
+  mymap.fitBounds(poly.getBounds());
+
+}).addTo(mymap);
                         /*
                     var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
