@@ -10,7 +10,7 @@
           href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
           integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
           crossorigin="">
-
+    <link rel="stylesheet" type="text/css" href="css/map_style.css">
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
             integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
@@ -103,6 +103,18 @@
                     marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
                     circle.bindPopup("I am a circle.");
                     polygon.bindPopup("I am a polygon.");
+
+                    marker.on('click', function(e){
+                      mymap.setView(e.latlng, 14);
+                    })
+
+                    circle.on('click', function(e){
+                      mymap.setView(e.latlng, 13);
+                    })
+
+                    polygon.on('click', function(e){
+                      mymap.setView(e.latlng, 13);
+                    })
                 </script>
             </div>
 
