@@ -17,6 +17,8 @@
             crossorigin=""></script>
 
     <!-- Mapbox access token -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css">
+    <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
     <script src="javascript/secret_keys.js"></script>
 
     <title>Ceri Prior</title>
@@ -79,13 +81,13 @@
                         var mymap = L.map('mapid');
 
                         L.tileLayer(
-                          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}',
+                          'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
                           {
                             maxZoom: 18,
-                            id: 'mapbox.mapbox-traffic-v1',
+                            id: 'mapbox/dark-v10',
                             accessToken: mapbox_access_token
                           }
-                    ).addTo(mymap);
+                        ).addTo(mymap);
                     var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
                     var circle = L.circle([51.508, -0.11], {
