@@ -19,6 +19,9 @@
     <!-- Mapbox access token -->
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css">
     <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <script src="javascript/secret_keys.js"></script>
 
     <title>Ceri Prior</title>
@@ -93,6 +96,7 @@
                           'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
                           {}
                         ).addTo(mymap);
+                        /*
                     var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
                     var circle = L.circle([51.508, -0.11], {
@@ -107,6 +111,7 @@
                       [51.503, -0.06],
                       [51.51, -0.047]
                     ]).addTo(mymap);
+
                     var polyline = L.polyline([
                       [51.506, -0.08],
                       [51.502, -0.06],
@@ -145,7 +150,7 @@
                     });
 
 (new ZoomViewer).addTo(mymap);
-
+*/
 mymap.setView([0,0], 1);
 
 </script>
