@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 7 Homework</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #501214;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #501214;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lab 7: ArcGIS JavaScript API</h1>
+
+    <h2>Lab Exercises</h2>
+    <p>Select an exercise to open it in a new tab.</p>
+
+    <select id="labLinks" onchange="openLab()">
+        <option value="">Select an exercise</option>
+        <option value="simple_mapping.html">Simple Mapping</option>
+        <option value="tile_layer.html">Tile Layers</option>
+        <option value="dynamic_layers.html">Dynamic Layers</option>
+        <option value="on_event.html">View on Event</option>
+        <option value="basemap_gallery.html">Basemap Gallery</option>
+        <option value="query_task.html">Spatial Query</option>
+    </select>
+
+    <script>
+        function openLab() {
+            var dropdown = document.getElementById("labLinks");
+            var selectedPage = dropdown.value;
+
+            if (selectedPage !== "") {
+                window.open(selectedPage, "_blank", "noopener");
+                dropdown.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
